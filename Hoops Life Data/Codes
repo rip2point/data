@@ -1,0 +1,14 @@
+local codes = {
+	"Shutdown",
+	"GymUpdate",
+	"NewContent",
+	"NewMascot",
+	"RevampedDribbles",
+	"SpinTheWheel",
+	"48k",
+	"30k",
+	"100XP",
+	"50XP",
+}
+
+return codes
