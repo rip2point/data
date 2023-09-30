@@ -1,5 +1,5 @@
 -- Clothing Data (Hoops Life)
--- This table was created by xurel
+-- This table was created by xurel (generated using scripts, table may have unrelated data)
 
 local clothingData = {
    Shirts = {
