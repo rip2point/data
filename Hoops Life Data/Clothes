@@ -1,5 +1,5 @@
 -- Clothing Data (Hoops Life)
--- This table was created by xurel (generated using scripts, table may have unrelated data)
+-- This table was created by xurel
 
 local clothingData = {
    Shirts = {
@@ -803,7 +803,6 @@ local clothingData = {
       "14148025299",
       "ChainNone",
       "Alien Necklace",
-
    },
    Bandana = {
       "UpdateHeadband1",
@@ -831,7 +830,7 @@ local clothingData = {
       "HeadBand91",
       "KarateVictory",
       "Meshes/headband25 objAccessory",
-      ""BRUH" Ninja headband",
+      '"BRUH" Ninja headband',
       "2UpdateHeadbands10",
       "2UpdateHeadbands2",
       "2UpdateHeadbands3",
