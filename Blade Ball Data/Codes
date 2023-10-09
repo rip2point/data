@@ -1,0 +1,6 @@
+local codes = {
+	"RRRANKEDDD",
+	"WEEK4",
+}
+
+return codes
