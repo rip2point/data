@@ -1,0 +1,414 @@
+local Converted = {
+	["_ScreenGui"] = Instance.new("ScreenGui");
+	["_Frame"] = Instance.new("Frame");
+	["_UICorner"] = Instance.new("UICorner");
+	["_UIGradient"] = Instance.new("UIGradient");
+	["_Values"] = Instance.new("Frame");
+	["_UIListLayout"] = Instance.new("UIListLayout");
+	["_WinHolder"] = Instance.new("TextLabel");
+	["_WinAmount"] = Instance.new("TextLabel");
+	["_LossesHolder"] = Instance.new("TextLabel");
+	["_LossesAmount"] = Instance.new("TextLabel");
+	["_KillsHolder"] = Instance.new("TextLabel");
+	["_KillsAmount"] = Instance.new("TextLabel");
+	["_UIStroke"] = Instance.new("UIStroke");
+	["_Notifications"] = Instance.new("Frame");
+	["_UIListLayout1"] = Instance.new("UIListLayout");
+	["_Bottom"] = Instance.new("Frame");
+	["_CLONE"] = Instance.new("TextLabel");
+	["_UICorner1"] = Instance.new("UICorner");
+	["_UIStroke1"] = Instance.new("UIStroke");
+	["_Frame1"] = Instance.new("Frame");
+	["_Functions"] = Instance.new("ModuleScript");
+	["_Main"] = Instance.new("LocalScript");
+	["_LocalScript"] = Instance.new("LocalScript");
+}
+
+-- Properties:
+
+Converted["_ScreenGui"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Converted["_ScreenGui"].Parent = game:GetService("CoreGui")
+
+Converted["_Frame"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Frame"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Frame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Frame"].BorderSizePixel = 0
+Converted["_Frame"].ClipsDescendants = true
+Converted["_Frame"].Position = UDim2.new(0.5, 0, 0.899619401, 0)
+Converted["_Frame"].Size = UDim2.new(0, 430, 0, 181)
+Converted["_Frame"].Parent = Converted["_ScreenGui"]
+
+Converted["_UICorner"].CornerRadius = UDim.new(0, 16)
+Converted["_UICorner"].Parent = Converted["_Frame"]
+
+Converted["_UIGradient"].Color = ColorSequence.new{
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(34.00000177323818, 34.00000177323818, 34.00000177323818)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(45.00000111758709, 45.00000111758709, 45.00000111758709))
+}
+Converted["_UIGradient"].Rotation = -104
+Converted["_UIGradient"].Parent = Converted["_Frame"]
+
+Converted["_Values"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Values"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Values"].BackgroundTransparency = 1
+Converted["_Values"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Values"].BorderSizePixel = 0
+Converted["_Values"].Position = UDim2.new(0.208953425, 0, 0.496418834, 0)
+Converted["_Values"].Size = UDim2.new(0, 149, 0, 142)
+Converted["_Values"].Name = "Values"
+Converted["_Values"].Parent = Converted["_Frame"]
+
+Converted["_UIListLayout"].Padding = UDim.new(0, 30)
+Converted["_UIListLayout"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout"].Parent = Converted["_Values"]
+
+Converted["_WinHolder"].Font = Enum.Font.MontserratBold
+Converted["_WinHolder"].Text = "Wins:"
+Converted["_WinHolder"].TextColor3 = Color3.fromRGB(200.00000327825546, 200.00000327825546, 200.00000327825546)
+Converted["_WinHolder"].TextSize = 25
+Converted["_WinHolder"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_WinHolder"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_WinHolder"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_WinHolder"].BackgroundTransparency = 1
+Converted["_WinHolder"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_WinHolder"].BorderSizePixel = 0
+Converted["_WinHolder"].Position = UDim2.new(0.29383716, 0, 0.19755131, 0)
+Converted["_WinHolder"].Size = UDim2.new(0, 200, 0, 19)
+Converted["_WinHolder"].Name = "WinHolder"
+Converted["_WinHolder"].Parent = Converted["_Values"]
+
+Converted["_WinAmount"].Font = Enum.Font.MontserratMedium
+Converted["_WinAmount"].Text = "0"
+Converted["_WinAmount"].TextColor3 = Color3.fromRGB(180.00000447034836, 180.00000447034836, 180.00000447034836)
+Converted["_WinAmount"].TextSize = 23
+Converted["_WinAmount"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_WinAmount"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_WinAmount"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_WinAmount"].BackgroundTransparency = 1
+Converted["_WinAmount"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_WinAmount"].BorderSizePixel = 0
+Converted["_WinAmount"].Position = UDim2.new(0.516499937, 0, 1.78278875, 0)
+Converted["_WinAmount"].Size = UDim2.new(0, 193, 0, 19)
+Converted["_WinAmount"].Name = "WinAmount"
+Converted["_WinAmount"].Parent = Converted["_WinHolder"]
+
+Converted["_LossesHolder"].Font = Enum.Font.MontserratBold
+Converted["_LossesHolder"].Text = "Losses:"
+Converted["_LossesHolder"].TextColor3 = Color3.fromRGB(200.00000327825546, 200.00000327825546, 200.00000327825546)
+Converted["_LossesHolder"].TextSize = 25
+Converted["_LossesHolder"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_LossesHolder"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_LossesHolder"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_LossesHolder"].BackgroundTransparency = 1
+Converted["_LossesHolder"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_LossesHolder"].BorderSizePixel = 0
+Converted["_LossesHolder"].Position = UDim2.new(0.29383716, 0, 0.342038006, 0)
+Converted["_LossesHolder"].Size = UDim2.new(0, 200, 0, 19)
+Converted["_LossesHolder"].Name = "LossesHolder"
+Converted["_LossesHolder"].Parent = Converted["_Values"]
+
+Converted["_LossesAmount"].Font = Enum.Font.MontserratMedium
+Converted["_LossesAmount"].Text = "0"
+Converted["_LossesAmount"].TextColor3 = Color3.fromRGB(180.00000447034836, 180.00000447034836, 180.00000447034836)
+Converted["_LossesAmount"].TextSize = 23
+Converted["_LossesAmount"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_LossesAmount"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_LossesAmount"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_LossesAmount"].BackgroundTransparency = 1
+Converted["_LossesAmount"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_LossesAmount"].BorderSizePixel = 0
+Converted["_LossesAmount"].Position = UDim2.new(0.515999973, 0, 1.78299999, 0)
+Converted["_LossesAmount"].Size = UDim2.new(0, 193, 0, 19)
+Converted["_LossesAmount"].Name = "LossesAmount"
+Converted["_LossesAmount"].Parent = Converted["_LossesHolder"]
+
+Converted["_KillsHolder"].Font = Enum.Font.MontserratBold
+Converted["_KillsHolder"].Text = "Kills:"
+Converted["_KillsHolder"].TextColor3 = Color3.fromRGB(200.00000327825546, 200.00000327825546, 200.00000327825546)
+Converted["_KillsHolder"].TextSize = 25
+Converted["_KillsHolder"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_KillsHolder"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_KillsHolder"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_KillsHolder"].BackgroundTransparency = 1
+Converted["_KillsHolder"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_KillsHolder"].BorderSizePixel = 0
+Converted["_KillsHolder"].Position = UDim2.new(0.29383716, 0, 0.486524701, 0)
+Converted["_KillsHolder"].Size = UDim2.new(0, 200, 0, 19)
+Converted["_KillsHolder"].Name = "KillsHolder"
+Converted["_KillsHolder"].Parent = Converted["_Values"]
+
+Converted["_KillsAmount"].Font = Enum.Font.MontserratMedium
+Converted["_KillsAmount"].Text = "0"
+Converted["_KillsAmount"].TextColor3 = Color3.fromRGB(180.00000447034836, 180.00000447034836, 180.00000447034836)
+Converted["_KillsAmount"].TextSize = 23
+Converted["_KillsAmount"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_KillsAmount"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_KillsAmount"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_KillsAmount"].BackgroundTransparency = 1
+Converted["_KillsAmount"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_KillsAmount"].BorderSizePixel = 0
+Converted["_KillsAmount"].Position = UDim2.new(0.515999973, 0, 1.78299999, 0)
+Converted["_KillsAmount"].Size = UDim2.new(0, 193, 0, 19)
+Converted["_KillsAmount"].Name = "KillsAmount"
+Converted["_KillsAmount"].Parent = Converted["_KillsHolder"]
+
+Converted["_UIStroke"].Color = Color3.fromRGB(80.00000283122063, 80.00000283122063, 80.00000283122063)
+Converted["_UIStroke"].Parent = Converted["_Frame"]
+
+Converted["_Notifications"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Notifications"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Notifications"].BackgroundTransparency = 1
+Converted["_Notifications"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Notifications"].BorderSizePixel = 0
+Converted["_Notifications"].ClipsDescendants = true
+Converted["_Notifications"].Position = UDim2.new(0.740116358, 0, 0.495977759, 0)
+Converted["_Notifications"].Size = UDim2.new(0, 208, 0, 163)
+Converted["_Notifications"].Name = "Notifications"
+Converted["_Notifications"].Parent = Converted["_Frame"]
+
+Converted["_UIListLayout1"].Padding = UDim.new(0, 4)
+Converted["_UIListLayout1"].HorizontalAlignment = Enum.HorizontalAlignment.Center
+Converted["_UIListLayout1"].SortOrder = Enum.SortOrder.LayoutOrder
+Converted["_UIListLayout1"].VerticalAlignment = Enum.VerticalAlignment.Bottom
+Converted["_UIListLayout1"].Parent = Converted["_Notifications"]
+
+Converted["_Bottom"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Bottom"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Bottom"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Bottom"].BorderSizePixel = 0
+Converted["_Bottom"].LayoutOrder = 100
+Converted["_Bottom"].Position = UDim2.new(0.5, 0, 0.993865013, 0)
+Converted["_Bottom"].Size = UDim2.new(0, 100, 0, 0)
+Converted["_Bottom"].Name = "Bottom"
+Converted["_Bottom"].Parent = Converted["_Notifications"]
+
+Converted["_CLONE"].Font = Enum.Font.MontserratBold
+Converted["_CLONE"].Text = "  Status Here..."
+Converted["_CLONE"].TextColor3 = Color3.fromRGB(140.00000685453415, 140.00000685453415, 140.00000685453415)
+Converted["_CLONE"].TextSize = 20
+Converted["_CLONE"].TextTransparency = 1
+Converted["_CLONE"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_CLONE"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_CLONE"].BackgroundColor3 = Color3.fromRGB(34.00000177323818, 34.00000177323818, 34.00000177323818)
+Converted["_CLONE"].BackgroundTransparency = 1
+Converted["_CLONE"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_CLONE"].BorderSizePixel = 0
+Converted["_CLONE"].Position = UDim2.new(0.0450000018, 0, 0.112000003, 0)
+Converted["_CLONE"].Size = UDim2.new(0, 200, 0, 50)
+Converted["_CLONE"].Visible = false
+Converted["_CLONE"].Name = "CLONE"
+Converted["_CLONE"].Parent = Converted["_Notifications"]
+
+Converted["_UICorner1"].Parent = Converted["_CLONE"]
+
+Converted["_UIStroke1"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke1"].Color = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_UIStroke1"].Parent = Converted["_CLONE"]
+
+Converted["_Frame1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Frame1"].BackgroundColor3 = Color3.fromRGB(60.00000022351742, 60.00000022351742, 60.00000022351742)
+Converted["_Frame1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Frame1"].BorderSizePixel = 0
+Converted["_Frame1"].Position = UDim2.new(0.465930253, 0, 0.484176725, 0)
+Converted["_Frame1"].Size = UDim2.new(0, 1, 0, 212)
+Converted["_Frame1"].Parent = Converted["_Frame"]
+
+-- Fake Module Scripts:
+
+local fake_module_scripts = {}
+
+do -- Fake Module: StarterGui.ScreenGui.Frame.Functions
+    local script = Instance.new("ModuleScript")
+    script.Name = "Functions"
+    script.Parent = Converted["_Frame"]
+    local function module_script()
+		local Functions = {}
+		
+		local TweenService = game:GetService("TweenService")
+		local NotifyBar = script.Parent:WaitForChild("Notifications")
+		local Values = script.Parent:WaitForChild("Values")
+		local Wins = Values:WaitForChild("WinHolder"):WaitForChild("WinAmount")
+		local Losses = Values:WaitForChild("LossesHolder"):WaitForChild("LossesAmount")
+		local Kills = Values:WaitForChild("KillsHolder"):WaitForChild("KillsAmount")
+		
+		
+		
+		local clone = NotifyBar:WaitForChild("CLONE")
+		clone.UIStroke.Transparency = 1
+		local Info = TweenInfo.new(0.43, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut)
+		
+		function Functions.Notify(text)
+			coroutine.wrap(function()
+				local Notification = clone:Clone()
+				Notification.Parent = clone.Parent
+				Notification.Name = "NOTIFICATION"
+				Notification.Visible = true
+				Notification.Text = "  "..text
+				TweenService:Create(Notification, Info, {BackgroundTransparency = 0}):Play()
+				TweenService:Create(Notification, Info, {TextTransparency = 0}):Play()
+				TweenService:Create(Notification.UIStroke, Info, {Transparency = 0}):Play()
+				task.wait(4)
+				TweenService:Create(Notification, Info, {BackgroundTransparency = 1}):Play()
+				TweenService:Create(Notification, Info, {TextTransparency = 1}):Play()
+				TweenService:Create(Notification.UIStroke, Info, {Transparency = 1}):Play()
+				task.wait(0.43)
+				Notification:Destroy()
+			end)()
+		end
+		
+		function Functions.UpdateWins(str)
+			coroutine.wrap(function()
+				TweenService:Create(Wins, Info, {TextTransparency = 1})
+				task.wait(0.43)
+				Wins.Text = str
+				TweenService:Create(Wins, Info, {TextTransparency = 0})
+				task.wait(0.43)
+			end)()
+		end
+		
+		function Functions.UpdateLosses(str)
+			coroutine.wrap(function()
+				TweenService:Create(Losses, Info, {TextTransparency = 1})
+				task.wait(0.43)
+				Losses.Text = str
+				TweenService:Create(Losses, Info, {TextTransparency = 0})
+				task.wait(0.43)
+			end)()
+		end
+		
+		function Functions.UpdateKills(str)
+			coroutine.wrap(function()
+				TweenService:Create(Kills, Info, {TextTransparency = 1})
+				task.wait(0.43)
+				Kills.Text = str
+				TweenService:Create(Kills, Info, {TextTransparency = 0})
+				task.wait(0.43)
+			end)()
+		end
+		
+		return Functions
+		
+    end
+    fake_module_scripts[script] = module_script
+end
+
+-- Fake Local Scripts:
+
+local function EYWK_fake_script() -- Fake Script: StarterGui.ScreenGui.Frame.Main
+    local script = Instance.new("LocalScript")
+    script.Name = "Main"
+    script.Parent = Converted["_Frame"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local Functions = require(script.Parent.Functions)
+	
+	--// getting services
+	local Players = game:GetService("Players")
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	
+	--// variables
+	local LocalPlayer = Players.LocalPlayer
+	local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+	local Humanoid = Character:WaitForChild("Humanoid")
+	local Data = LocalPlayer:WaitForChild("leaderstats")
+	local WinValue = Data:WaitForChild("Wins")
+	local KillValue = Data:WaitForChild("Kills")
+	
+	local Remotes = ReplicatedStorage:WaitForChild("Remotes")
+	local Parry = Remotes:WaitForChild("ParryAttempt")
+	
+	--// booleans
+	local Wins = 0
+	local Losses = 0
+	local Kills = 0
+	local Debounce = false
+	
+	--// main script
+	
+	Parry.OnClientEvent:Connect(function()
+		if Debounce == true then return end
+		Debounce = true
+		Functions.Notify("Requesting Hit..")
+		task.wait(0.2)
+		Debounce = false
+	end)
+	
+	WinValue.Changed:Connect(function()
+		Wins += 1
+		Functions.UpdateWins(tostring(Wins))
+		Functions.Notify("Won Game!")
+	end)
+	
+	KillValue.Changed:Connect(function()
+		Kills += 1
+		Functions.UpdateKills(tostring(Kills))
+		Functions.Notify("Killed Player!")
+	end)
+	
+	Humanoid.Died:Connect(function()
+		Losses += 1
+		Functions.UpdateLosses(tostring(Losses))
+		Functions.Notify("Lost Game!")
+		Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+		Humanoid = Character:WaitForChild("Humanoid")
+	end)
+end
+local function AVPG_fake_script() -- Fake Script: StarterGui.ScreenGui.Frame.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Frame"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	
+	local dragToggle = nil
+	local dragSpeed = 0.1
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+
+coroutine.wrap(EYWK_fake_script)()
+coroutine.wrap(AVPG_fake_script)()
