@@ -1,3 +1,7 @@
+-- Generated using RoadToGlory's Converter v1.1 (RoadToGlory#9879)
+
+-- Instances:
+
 local Converted = {
 	["_ScreenGui"] = Instance.new("ScreenGui");
 	["_Frame"] = Instance.new("Frame");
@@ -294,7 +298,7 @@ end
 
 -- Fake Local Scripts:
 
-local function EYWK_fake_script() -- Fake Script: StarterGui.ScreenGui.Frame.Main
+local function QLFZPG_fake_script() -- Fake Script: StarterGui.ScreenGui.Frame.Main
     local script = Instance.new("LocalScript")
     script.Name = "Main"
     script.Parent = Converted["_Frame"]
@@ -359,8 +363,21 @@ local function EYWK_fake_script() -- Fake Script: StarterGui.ScreenGui.Frame.Mai
 		Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
 		Humanoid = Character:WaitForChild("Humanoid")
 	end)
+	
+	LocalPlayer.CharacterAdded:Connect(function(char)
+		local Humanoid = char:WaitForChild("Humanoid")
+		Humanoid.Died:Connect(function()
+			Losses += 1
+			Functions.UpdateLosses(tostring(Losses))
+			Functions.Notify("Lost Game!")
+			Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+			Humanoid = Character:WaitForChild("Humanoid")
+		end)
+	end)
+	
+	
 end
-local function AVPG_fake_script() -- Fake Script: StarterGui.ScreenGui.Frame.LocalScript
+local function GEXX_fake_script() -- Fake Script: StarterGui.ScreenGui.Frame.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Frame"]
@@ -410,5 +427,5 @@ local function AVPG_fake_script() -- Fake Script: StarterGui.ScreenGui.Frame.Loc
 	end)
 end
 
-coroutine.wrap(EYWK_fake_script)()
-coroutine.wrap(AVPG_fake_script)()
+coroutine.wrap(QLFZPG_fake_script)()
+coroutine.wrap(GEXX_fake_script)()
